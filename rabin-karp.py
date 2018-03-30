@@ -53,7 +53,5 @@ def main():
 	Plag_Test(p,len(text))
 	
 
-
-
 if __name__ == '__main__':
 	main()
