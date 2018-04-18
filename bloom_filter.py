@@ -1,7 +1,7 @@
 from bitarray import *
 
 
-class ff_bloom_filter:
+class bloom_filter:
     def __init__(self, size):
         self.size = size
         self.first_filter, self.second_filter = bitarray(size), bitarray(size)
@@ -9,7 +9,6 @@ class ff_bloom_filter:
         self.second_filter.setall(0)
 
     def set_bit(self, filter_no, indices):
-        # print indices
         for idx in indices:
             if filter_no == 1:
                 self.first_filter[int(idx)] = 1
